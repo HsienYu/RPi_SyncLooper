@@ -41,6 +41,6 @@ else
 		current=0
 	fi
 
-	/usr/bin/omxplayersync -muo "$audio_source" "$FILES${vids[$current]}"
+	/usr/bin/omxplayersync -mu -o "$audio_source" "$FILES${vids[$current]}"
 fi
 done
