@@ -1,4 +1,3 @@
-autostart=1
 usb=1
 audio_source=hdmi
 role=m
