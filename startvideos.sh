@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 declare -A vids
@@ -9,7 +10,7 @@ IFS=$(echo -en "\n\b")
 configs=`cat /boot/looperconfig.txt`
 usb=`echo "$configs" | grep usb | cut -c 5- | tr -d '\r' | tr -d '\n'`
 audio_source=`echo "$configs" | grep audio_source | cut -c 14- | tr -d '\r' | tr -d '\n'`
-seamless=`echo "$configs" | grep seamless | cut -c 10- | tr -d '\r' | tr -d '\n'`
+role=`echo "$configs" | grep role | cut -c 6- | tr -d '\r' | tr -d '\n'`
 
 FILES=/home/pi/videos/
 
@@ -22,7 +23,7 @@ for f in `ls $FILES | grep ".mp4$\|.avi$\|.mkv$\|.mp3$\|.mov$\|.mpg$\|.flv$\|.m4
 do
         vids[$current]="$f"
         let current+=1
-	echo "$f"
+        echo "$f"
 done
 max=$current
 current=0
@@ -31,16 +32,17 @@ current=0
 IFS=$SAVEIFS
 
 while true; do
-if pgrep omxplayer-sync > /dev/null
+if pgrep omxplayer > /dev/null
 then
-	echo 'running'
+        echo 'running'
 else
-	let current+=1
-	if [ $current -ge $max ]
-	then
-		current=0
-	fi
+        let current+=1
+        if [ $current -ge $max ]
+        then
+                current=0
+        fi
 
-	/usr/bin/omxplayersync -mu -o "$audio_source" "$FILES${vids[$current]}"
+        /usr/bin/omxplayer-sync -"$role"u -o "$audio_source" "$FILES${vids[$current]}"
 fi
 done
+
