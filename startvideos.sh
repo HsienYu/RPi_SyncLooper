@@ -7,7 +7,7 @@ declare -A vids
 SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
 
-configs=`cat /boot/looperconfig.txt`
+configs=`cat /boot/configfile.txt`
 usb=`echo "$configs" | grep usb | cut -c 5- | tr -d '\r' | tr -d '\n'`
 audio_source=`echo "$configs" | grep audio_source | cut -c 14- | tr -d '\r' | tr -d '\n'`
 role=`echo "$configs" | grep role | cut -c 6- | tr -d '\r' | tr -d '\n'`
