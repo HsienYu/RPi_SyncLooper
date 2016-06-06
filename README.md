@@ -20,4 +20,4 @@ Player Multiple Video in sync and loop by OMXPlayer-sync
         0 --play video from /home/pi/
         
         
-*Tahnks to StevenHickson & turingmachine, and original sync script from Simon Josi.*
+*Thanks to StevenHickson & turingmachine, and original sync script from Simon Josi.*
