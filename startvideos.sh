@@ -12,7 +12,7 @@ usb=`echo "$configs" | grep usb | cut -c 5- | tr -d '\r' | tr -d '\n'`
 audio_source=`echo "$configs" | grep audio_source | cut -c 14- | tr -d '\r' | tr -d '\n'`
 role=`echo "$configs" | grep role | cut -c 6- | tr -d '\r' | tr -d '\n'`
 
-FILES=/home/pi/videos/
+FILES=/home/pi/
 
 if [[ $usb -eq 1 ]]; then
     FILES=/media/USB/
