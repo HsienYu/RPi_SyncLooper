@@ -4,4 +4,4 @@ Player Multiple Video in sync and loop by OMXPlayer-sync
 
 
 
-*Tahnks to StevenHickson & turingmachine, and original script from Simon Josi.*
+*Tahnks to StevenHickson & turingmachine, and original sync script from Simon Josi.*
