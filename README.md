@@ -12,11 +12,12 @@ Player Multiple Video in sync and loop by OMXPlayer-sync
   then "done"
   
   configfile:
-  role=m --master device
-       s --slaver device
-  audio_source=hdmi or local
-  usb=1 --play video from USB media
-      0 --play video from /home/pi/
+  
+    role=m --master device
+         s --slaver device
+    audio_source=hdmi or local
+    usb=1 --play video from USB media
+        0 --play video from /home/pi/
         
         
 *Tahnks to StevenHickson & turingmachine, and original sync script from Simon Josi.*
