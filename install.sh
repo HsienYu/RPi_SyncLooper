@@ -1,6 +1,5 @@
-su - 
 cp -a startvideos.sh /home/pi/
-cp -a looperconfig.txt /boot/
+cp -a configfile.txt /boot/
 chmod +x startvideos.sh
 apt-get remove omxplayer
 rm -rf /usr/bin/omxplayer /usr/bin/omxplayer.bin /usr/lib/omxplayer
