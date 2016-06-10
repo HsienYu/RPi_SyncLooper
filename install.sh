@@ -12,7 +12,7 @@ easy_install pip
 pip install pexpect
 mkdir /media/USB
 chmod a+r /media/USB
-echo "/dev/sda1	/media/USB	exfat	defaults,noatime,nodiratime 	0	0" >> /etc/fstab
+echo "/dev/sda1	/media/USB	exfat	defaults,noatime 	0	0" >> /etc/fstab
 sed -i '/\exit 0/i setterm -blank 1' /etc/rc.local
 sed -i '/\exit 0/i sudo /home/pi/projects/startvideos.sh &' /etc/rc.local
 echo "enjoy!" 
