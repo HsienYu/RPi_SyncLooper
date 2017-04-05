@@ -3,7 +3,7 @@ Player Multiple Video in sync and loop by OMXPlayer-sync
 
   setup:
   copy or download files
-  execute install.sh file
+  execute install.sh file in superuser mode
   
   setup all pi in same network
   
@@ -20,4 +20,4 @@ Player Multiple Video in sync and loop by OMXPlayer-sync
         0 --play video from /home/pi/
         
         
-*Thanks to StevenHickson & turingmachine, and original sync script from Simon Josi.*
+*Thanks to original sync script from Simon Josi.*
