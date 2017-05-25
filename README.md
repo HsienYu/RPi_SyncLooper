@@ -5,7 +5,7 @@ Player Multiple Video in sync and loop by OMXPlayer-sync
   copy or download files
   execute install.sh file in superuser mode
   
-  setup all pi in same network
+  setup all pi in same network, with router or switcher (you need to setup network by hub or switcher)
   
   format your USB media to exfat format
   
