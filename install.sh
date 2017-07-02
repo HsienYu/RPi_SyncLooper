@@ -17,9 +17,9 @@ wget -O /usr/bin/omxplayer-sync https://github.com/turingmachine/omxplayer-sync/
 chmod 0755 /usr/bin/omxplayer-sync
 mkdir /media/USB
 chmod a+r /media/USB
-echo "/dev/sda1	/media/USB	exfat	defaults,noatime 	0	0" >> /etc/fstab
+echo "/dev/sda1	/media/USB	exfat	defaults	0	2" >> /etc/fstab
 sed -i -e '$i \setterm -blank 1\n' /etc/rc.local
-sed -i -e '$i \sudo /home/pi/startvideos.sh &\n' /etc/rc.local
+sed -i -e '$i \sudo /home/pi/playvideos.sh &\n' /etc/rc.local
 
 exit 0
 
