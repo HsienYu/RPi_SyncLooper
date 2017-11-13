@@ -42,7 +42,7 @@ else
                 current=0
         fi
 
-        /usr/bin/omxplayer-sync -"$role" -o "$audio_source" "$FILES${vids[$current]}"
+        /usr/bin/omxplayer-sync -"$role"u "$FILES${vids[$current]}"
 fi
 done
 
