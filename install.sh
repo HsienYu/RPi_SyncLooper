@@ -4,9 +4,9 @@ if [ "$EUID" -ne 0 ]
 	exit
 fi
 
-cp -a startvideos.sh /home/pi/
+cp -a playvideos.sh /home/pi/
 cp -a configfile.txt /boot/
-chmod +x /home/pi/startvideos.sh
+chmod +x /home/pi/playvideos.sh
 apt-get remove omxplayer
 rm -rf /usr/bin/omxplayer /usr/bin/omxplayer.bin /usr/lib/omxplayer
 apt-get install libpcre3 fonts-freefont-ttf fbset libssh-4 python3-dbus exfat-fuse
