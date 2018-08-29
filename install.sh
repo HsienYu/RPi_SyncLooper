@@ -9,7 +9,7 @@ cp -a configfile.txt /boot/
 chmod +x /home/pi/playvideos.sh
 apt-get remove omxplayer
 rm -rf /usr/bin/omxplayer /usr/bin/omxplayer.bin /usr/lib/omxplayer
-apt-get install libpcre3 fonts-freefont-ttf fbset libssh-4 python3-dbus exfat-fuse
+apt-get install libpcre3 fonts-freefont-ttf fbset libssh-4 python3-dbus exfat-fuse exfat-utils
 wget http://omxplayer.sconde.net/builds/omxplayer_0.3.7~git20160713~66f9076_armhf.deb
 apt-get -f install
 dpkg -i omxplayer_0.3.7~git20160713~66f9076_armhf.deb
