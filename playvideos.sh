@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 declare -A vids
