@@ -1,5 +1,5 @@
 usb=1
-audio_source=hdmi
+audio_source=both
 role=m
 
 
