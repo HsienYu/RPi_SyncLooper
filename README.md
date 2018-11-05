@@ -21,7 +21,7 @@ Player Multiple Video in sync and loop by OMXPlayer-sync
   
     role=m --master device (can be used as single channel video loop player)
          l --slaver device
-    audio_source=hdmi or local
+    audio_source=hdmi or local or both
     usb=1 --play video from USB media
         0 --play video from /home/pi/
         
