@@ -19,7 +19,7 @@ wget http://omxplayer.sconde.net/builds/omxplayer_0.3.7~git20160713~66f9076_armh
 dpkg -i omxplayer_0.3.7~git20160713~66f9076_armhf.deb
 apt-get -f install
 dpkg -i omxplayer_0.3.7~git20160713~66f9076_armhf.deb
-wget -O /usr/bin/omxplayer-sync https://github.com/turingmachine/omxplayer-sync/raw/master/omxplayer-sync
+wget -O /usr/bin/omxplayer-sync https://github.com/HsienYu/omxplayer-sync/raw/master/omxplayer-sync
 chmod 0755 /usr/bin/omxplayer-sync
 mkdir /media/USB
 chmod a+r /media/USB
