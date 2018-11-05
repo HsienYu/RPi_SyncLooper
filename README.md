@@ -11,7 +11,7 @@ Player Multiple Video in sync and loop by OMXPlayer-sync
 
   by switch --- setup interface eth0 in /boot/dhcpcd.conf
   
-  by WIFI, setup your ssid & passwd in /boot/wpa_supplicant.conf file
+  by WIFI, setup your ssid & passwd in /boot/wpa_supplicant.conf
   
   format your USB drive to exfat format
   
