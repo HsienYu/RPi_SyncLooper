@@ -4,10 +4,13 @@ if [ "$EUID" -ne 0 ]
 	exit
 fi
 
-cp -a playvideos.sh /home/pi/
-cp -a configfile.txt /boot/
-cp -a ssh /boot/
-cp -a wpa_supplicant.conf /boot/
+cp -a playvideos.sh /home/pi/playvideos.sh
+cp -a configfile.txt /boot/configfile.txt
+cp -a ssh /boot/ssh
+cp -a wpa_supplicant.conf /boot/wpa_supplicant.conf
+cp /etc/dhcpcd.conf /boot/dhcpcd.conf
+mv /etc/dhcpcd.conf /etc/dhcpcd.conf.backup
+ln -s /boot/dhcpcd.conf /etc/dhcpcd.conf
 chmod +x /home/pi/playvideos.sh
 apt-get remove omxplayer
 rm -rf /usr/bin/omxplayer /usr/bin/omxplayer.bin /usr/lib/omxplayer

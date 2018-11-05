@@ -5,9 +5,13 @@ Player Multiple Video in sync and loop by OMXPlayer-sync
   git clone or download files
   execute install.sh file in superuser mode
   
-  setup all pi in same network, with router or switcher (you need to setup network for)
+  setup all pi in same network:
   
-  if your are doing it via WIFI, setup your ssid & passwd in /boot/wpa_supplicant.conf file
+  by router --- you don't need to do additional setup
+
+  by switch --- setup interface eth0 in /boot/dhcpcd.conf
+  
+  by WIFI, setup your ssid & passwd in /boot/wpa_supplicant.conf file
   
   format your USB drive to exfat format
   
