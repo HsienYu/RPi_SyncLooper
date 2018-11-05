@@ -2,16 +2,18 @@
 Player Multiple Video in sync and loop by OMXPlayer-sync 
 
   setup:
-  copy or download files
+  git clone or download files
   execute install.sh file in superuser mode
   
-  setup all pi in same network, with router or switcher (you need to setup network by hub or switcher)
+  setup all pi in same network, with router or switcher (you need to setup network for)
   
-  format your USB media to exfat format
+  if your are doing it via WIFI, setup your ssid & passwd in /boot/wpa_supplicant.conf file
+  
+  format your USB drive to exfat format
   
   then "done"
   
-  configfile:
+  edit /boot/configfile.txt
   
     role=m --master device (can be used as single channel video loop player)
          l --slaver device
