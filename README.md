@@ -15,6 +15,8 @@ Player Multiple Video in sync and loop by OMXPlayer-sync
   
   format your USB drive to exfat format(*make sure the video file name has to be same. for exsample: bbb.mov and bbb.mov)
   
+  suuport H264 codec in .mp4 .avi .mkv .mov .mpg .m4v and mp3 audio
+  
   then "done"
   
   edit /boot/configfile.txt
