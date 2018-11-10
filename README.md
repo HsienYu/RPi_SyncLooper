@@ -13,7 +13,7 @@ Player Multiple Video in sync and loop by OMXPlayer-sync
   
   by WIFI, setup your ssid & passwd in /boot/wpa_supplicant.conf
   
-  format your USB drive to exfat format
+  format your USB drive to exfat format(*make sure the video file name has to be same. for exsample: bbb.mov and bbb.mov)
   
   then "done"
   
@@ -24,6 +24,8 @@ Player Multiple Video in sync and loop by OMXPlayer-sync
     audio_source=hdmi or local or both
     usb=1 --play video from USB media
         0 --play video from /home/pi/
-        
+      
         
 *Thanks to original sync script from Simon Josi.*
+
+ready to use imgfile: https://github.com/turingmachine/omxplayer-sync/raw/master/synctest.mp4
