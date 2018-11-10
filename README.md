@@ -9,7 +9,9 @@ Player Multiple Video in sync and loop by OMXPlayer-sync
   setup all pi in same network:
   
   by router --- you don't need to do additional setup
-
+  
+  you can setup up files in boot partition by reading SDcard in your computer
+  
   by switch --- setup interface eth0 in /boot/dhcpcd.conf
   
   by WIFI, setup your ssid & passwd in /boot/wpa_supplicant.conf
