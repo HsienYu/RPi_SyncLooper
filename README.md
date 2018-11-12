@@ -5,6 +5,7 @@ Player Multiple Video in sync and loop by OMXPlayer-sync
   git clone or download files
   make the file can be executed: sudo chmod +x install.sh
   then execute install.sh file in root mode(sudo su)
+  wiki: https://github.com/HsienYu/RPi_SyncLooper/wiki
   
   setup all pi in same network:
   
