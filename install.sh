@@ -12,13 +12,7 @@ cp /etc/dhcpcd.conf /boot/dhcpcd.conf
 mv /etc/dhcpcd.conf /etc/dhcpcd.conf.backup
 ln -s /boot/dhcpcd.conf /etc/dhcpcd.conf
 chmod +x /home/pi/playvideos.sh
-apt-get remove omxplayer
-rm -rf /usr/bin/omxplayer /usr/bin/omxplayer.bin /usr/lib/omxplayer
 apt-get install libpcre3 fonts-freefont-ttf fbset libssh-4 python3-dbus exfat-fuse exfat-utils
-wget https://archive.raspberrypi.org/debian/pool/main/o/omxplayer/omxplayer_0.3.7~git20160923~dfea8c9_armhf.deb
-dpkg -i omxplayer_0.3.7~git20160923~dfea8c9_armhf.deb
-apt-get -f install
-dpkg -i omxplayer_0.3.7~git20160923~dfea8c9_armhf.deb
 apr-get update
 apt-get -f install
 wget -O /usr/bin/omxplayer-sync https://github.com/HsienYu/omxplayer-sync/raw/master/omxplayer-sync
