@@ -34,4 +34,4 @@ Player Multiple Video in sync and loop by OMXPlayer-sync
         
 *Thanks to original sync script from Simon Josi.*
 
-ready to use imgfile: https://drive.google.com/open?id=10wEXzkD2qDfRM4u9-yevPR09CQiCEB8p
+ready to use imgfile: https://drive.google.com/open?id=1MOaQwpwyph-iFUvUefcCN_0_4U5F1_rd
