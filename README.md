@@ -23,7 +23,7 @@ Player Multiple Video in sync and loop by OMXPlayer-sync
   
   then "done"
   
-  edit /boot/configfile.txt
+  edit /boot/configfile.txt from SDcard or via terminal
   
     role=m --master device (can be used as single channel video loop player)
          l --slaver device
