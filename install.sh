@@ -13,7 +13,7 @@ mv /etc/dhcpcd.conf /etc/dhcpcd.conf.backup
 ln -s /boot/dhcpcd.conf /etc/dhcpcd.conf
 chmod +x /home/pi/playvideos.sh
 apt-get install libpcre3 fonts-freefont-ttf fbset libssh-4 python3-dbus exfat-fuse exfat-utils
-apr-get update
+apt-get update
 apt-get -f install
 wget -O /usr/bin/omxplayer-sync https://github.com/HsienYu/omxplayer-sync/raw/master/omxplayer-sync
 chmod 0755 /usr/bin/omxplayer-sync
